@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TigerFragment">
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="466dp"
+        android:layout_height="109dp"
+        android:text="Hello" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="595dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="175dp"
+        android:text="Say Something" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="175dp"
+        android:text="Button" />
+
+</FrameLayout>

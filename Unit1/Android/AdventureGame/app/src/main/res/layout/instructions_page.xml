@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80A9C4"
+    android:backgroundTint="#80A9C4"
+    tools:context=".InstructionsPage">
+
+    <Button
+        android:id="@+id/homepageBTN"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#202020"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionsLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="585dp"
+        android:fontFamily="cursive"
+        android:text="Instructions:"
+        android:textAlignment="center"
+        android:textColor="#202020"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="554dp"
+        android:background="#202020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="709dp"
+        android:background="#202020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="689dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="572dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="63dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginBottom="465dp"
+        android:src="@drawable/convection_stove_icon_outline_electric_oven_vector_removebg_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="280dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="226dp"
+        android:text="Use this button to see your available recipes and which ones you have completed."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="280dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="159dp"
+        android:text="Use this button to see your available money and earn more."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="280dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="581dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="103dp"
+        android:text="Use this button to navigate to the store to buy ingredients."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="278dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="378dp"
+        android:text="Use this button to navigate to the fridge. In the fridge you are able to see your inventory and grab items to take to your station."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="277dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="293dp"
+        android:text="Use this button to navigate to the pantry. In the pantry you are able to see your inventory and grab items to take to your station."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="47dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="451dp"
+        android:layout_marginEnd="326dp"
+        android:layout_marginBottom="222dp"
+        android:src="@drawable/menu_card_icon_in_black_outline_vector_removebg_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="274dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="472dp"
+        android:text="Use this button to navigate to the oven to cook your dishes!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="62dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="353dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="288dp"
+        android:src="@drawable/istockphoto_892009084_612x612_removebg_preview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="63dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginBottom="378dp"
+        android:src="@drawable/download_removebg_preview__3_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="311dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/images_removebg_preview__4_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="91dp"
+        android:src="@drawable/images_removebg_preview__5_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

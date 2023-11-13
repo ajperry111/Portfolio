@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D7D7"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/playGameBTN"
+        android:layout_width="176dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="596dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="89dp"
+        android:backgroundTint="#202020"
+        android:outlineProvider="none"
+        android:text="Play Game"
+        android:textColorHighlight="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="658dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="553dp"
+        android:fontFamily="cursive"
+        android:text="Baking Boss!"
+        android:textAlignment="center"
+        android:textColor="#202020"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="612dp"
+        android:fontFamily="serif-monospace"
+        android:text="Welcome to"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#202020"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="21dp"
+        android:background="#202020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="493dp"
+        android:background="#202020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="518dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/instructionBTN"
+        android:layout_width="173dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="596dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="89dp"
+        android:backgroundTint="#202020"
+        android:outlineProvider="none"
+        android:text="Instructions"
+        android:textColorHighlight="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="158dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="223dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/istockphoto_892009084_612x612_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="161dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="223dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download_removebg_preview__3_" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="123dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/convection_stove_icon_outline_electric_oven_vector_removebg_preview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

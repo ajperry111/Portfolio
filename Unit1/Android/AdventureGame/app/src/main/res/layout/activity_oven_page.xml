@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4A0B5"
+    tools:context=".OvenPage">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="260dp"
+        android:layout_height="271dp"
+        app:srcCompat="@drawable/convection_stove_icon_outline_electric_oven_vector_removebg_preview"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <Spinner
+        android:id="@+id/ingredient1"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Spinner
+        android:id="@+id/ingredient2"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <Spinner
+        android:id="@+id/ingredient3"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <Spinner
+        android:id="@+id/ingredient4"
+        android:layout_width="383dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <Button
+        android:id="@+id/stationBTN"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#202020"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD9B8"
+    tools:context=".Station">
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="match_parent"
+        android:layout_height="2.5dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="621dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="644dp"
+        android:onClick="recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_card_icon_in_black_outline_vector_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="76dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="638dp"
+        android:onClick="store"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images_removebg_preview__5_" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="84dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="336dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="634dp"
+        android:onClick="money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images_removebg_preview__4_" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="644dp"
+        android:onClick="pantry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/istockphoto_892009084_612x612_removebg_preview" />
+    <!--https://www.geeksforgeeks.org/handling-click-events-button-android/ for making the images clickable-->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="64dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="634dp"
+        android:onClick="fridge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download_removebg_preview__3_" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="642dp"
+        android:onClick="oven"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/convection_stove_icon_outline_electric_oven_vector_removebg_preview" />
+</androidx.constraintlayout.widget.ConstraintLayout>
