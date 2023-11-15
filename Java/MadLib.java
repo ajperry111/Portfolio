@@ -1,6 +1,5 @@
-package Unit1.Bellringers;
 import java.util.Scanner;
-public class MadLibBellringer {
+public class MadLib {
     public static void main(String[] args) {
         Scanner ui = new Scanner(System.in);
         System.out.println("Enter an adjective: ");
