@@ -1,7 +1,6 @@
-package Unit1.Bellringers;
 import java.util.Scanner;
 import java.lang.Math;
-public class CalculatorBellringer {
+public class Calculatorr {
     public static void main(String[] args){
         Scanner ui = new Scanner(System.in);
         System.out.println("Enter a number: ");
