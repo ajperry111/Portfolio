@@ -1,4 +1,3 @@
-package Unit1.Bellringers;
 import java.util.Scanner;
 public class GPABellringer {
     public static void main(String[] args) {
