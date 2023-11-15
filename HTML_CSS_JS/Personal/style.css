@@ -1,0 +1,1079 @@
+
+/*Arranging the website content for windows 900px and above*/
+@media(min-width:900px){
+    /*Creating an animation to gradually bring the banner accross the screen*/
+    @keyframes bannermove{
+        from {transform: translate(900px, 0px);}
+        to {transform: translate(-300px, 0px);}
+    }
+    #body2{
+        background-color:rgba(0, 23, 139, 0.731);
+    }
+    .red{
+        transform: translate(130px,40px);
+        overflow-y: clip;
+    }
+    .red:hover{
+        width:100px;
+        height:100px;
+    }
+    .red2{
+        transform: translate(160px,-260px);
+    }
+    .red2:hover{
+        width:100px;
+        height:100px;
+    }
+    .red3{
+        transform: translate(410px,-340px);
+    }
+    .red3:hover{
+        width:100px;
+        height:100px;
+    }
+    .red4{
+        transform: translate(620px,-250px);
+    }
+    .red4:hover{
+        width:100px;
+        height:100px;
+    }
+    .red5{
+        transform: translate(690px,40px);
+    }
+    .red5:hover{
+        width:100px;
+        height:100px;
+    }
+    .plane{
+        position:absolute;
+        height:200px;
+        width:150px;
+        top:420px;
+        left:555px;
+    }
+    .islands{
+        height:100px;
+        width:100px;
+        display:flex;
+    }
+    .Island1{
+        height:120px;
+        width:120px;
+        transform: translate(130px,150px)
+    }
+    .Island2{
+        height:120px;
+        width:120px;
+        transform: translate(110px,-160px)
+    }
+    .Island3{
+        height:120px;
+        width:120px;
+        transform: translate(320px,-240px)
+    }
+    .Island4{
+        height:120px;
+        width:120px;
+        transform: translate(480px,-150px)
+    }
+    .Island5{
+        height:120px;
+        width:120px;
+        transform: translate(520px,140px)
+    }
+    .topBanner{
+        overflow-x: clip;
+        margin-top: -10px;
+        margin-left:-8px;
+        margin-right:-8px;
+        border-bottom: solid rgb(122, 121, 121) 2px;
+        background-color: #49ccf0c5;
+        height:75px;
+    }
+    .bannerContents{
+        overflow-x: hidden;
+        display:flex;
+        /*Calling the correct animation and attatching it to the banner*/
+        animation-name: bannermove;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .string{
+        margin-left: 0px;
+        z-index: 3;
+        margin-top:10px;
+        height:50px;
+        width:30px;
+    }
+    .bannertitle{
+        z-index: 3;
+        width: auto;
+        height: 50px;
+        background-color: aliceblue;
+        border:2px solid #D57A09;
+        border-radius: 5px;
+        padding:3px;
+        color: #510205ab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: "Lucida Console", "Courier New", monospace;
+        margin-top:10px;
+    }
+    .horizairplane{
+        z-index: 3;
+        padding-top:5px;
+        margin-right: 0px;
+        height:65px;
+        width:90px;
+    }
+    .arrow90{
+        height:222px;
+        width:100px;
+        transform: translateY(120px)
+    }
+    .arrow135{
+        height:250px;
+        width:100px;
+        transform: translateY(175px)translateX(-50px)rotate(0.125turn);
+    }
+    .arrow180{
+        height:250px;
+        width:100px;
+        transform: translateY(340px)translateX(-210px)rotate(0.25turn);
+    }
+    .arrow45{
+        height:250px;
+        width:100px;
+        transform: translateY(175px)translateX(50px)rotate(-0.125turn);
+    }
+    .arrow0{
+        height:250px;
+        width:100px;
+        transform: translateY(340px)translateX(210px)rotate(-0.25turn);
+    }
+    .arrows{
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Creating an animation to gradually switch the cloud1 from below view -> assigned spot*/
+    @keyframes cloud1move{
+        from {transform: translate(-150px, -800px);}
+        to {transform: translate(-150px, -10px);}
+    }
+    /*Creating an animation to gradually switch the cloud2 from below view -> assigned spot*/
+    @keyframes cloud2move{
+        from {transform: translate(0px, -800px);}
+        to {transform: translate(0px, 100px);}
+    }
+    /*Creating an animation to gradually switch the cloud3 from below view -> assigned spot*/
+    @keyframes cloud3move{
+        from {transform: translate(-340px, -800px);}
+        to {transform: translate(-340px, 210px);}
+    }
+    /*Creating an animation to gradually switch the cloud4 from below view -> assigned spot*/
+    @keyframes cloud4move{
+        from {transform: translate(-650px, -800px);}
+        to {transform: translate(-650px, 350px);}
+    }
+    /*Creating an animation to gradually switch the cloud5 from below view -> assigned spot*/
+    @keyframes cloud5move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, 450px);}
+    }
+    /*Creating an animation to gradually switch the cloud6 from below view -> assigned spot*/
+    @keyframes cloud6move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, -60px);}
+    }
+    /*Creating an animation to gradually switch the cloud7 from below view -> assigned spot*/
+    @keyframes cloud7move{
+        from {transform: translate(-250px, -800px);}
+        to {transform: translate(-250px, 50px);}
+    }
+    /*Creating an animation to gradually switch the cloud8 from below view -> assigned spot*/
+    @keyframes cloud8move{
+        from {transform: translate(1100px, -800px);}
+        to {transform: translate(1100px, 60px);}
+    }
+    /*Creating an animation to gradually switch the cloud9 from below view -> assigned spot*/
+    @keyframes cloud9move{
+        from {transform: translate(900px, -800px);}
+        to {transform: translate(900px, -180px);}
+    }
+    /*Creating an animation to gradually switch the cloud10 from below view -> assigned spot*/
+    @keyframes cloud10move{
+        from {transform: translate(625px, -800px);}
+        to {transform: translate(625px, 270px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes planemove{
+        from {transform: translate(564px, 800px);}
+        to {transform: translate(564px, 10px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes topstringmove{
+        from {transform: translate(562px, 800px);}
+        to {transform: translate(562px, -182px) rotate(45deg);}
+    }
+    /*Creating an animation to gradually switch the login section from below view -> assigned spot*/
+    @keyframes containermove{
+        from {transform: translate(20px, 800px);}
+        to {transform: translate(20px, -302px);}
+    }
+    /*Class for the entire login/signup section to limit repeating code*/
+    .container{
+        /*Setting width of section*/
+        max-width: 400px;
+        /*Centering the section in the middle of the page*/
+        margin: 0 auto;
+        padding: 20px;
+        /*Adding color to the background, border, and inset shadow to decrease contrast from blue to white*/
+        background-color: #ffffff;
+        border:1.5px solid #D57A09;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 1em 1em #ebf7fe;
+        /*Setting the font for the entire section class*/
+        font-family: "Lucida Console", "Courier New", monospace;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: containermove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(20px, -302px);
+    }
+    /*Sizing the input boxes for username,password,and names and calling them by their type*/
+    input[type="text"],
+    input[type="password"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="name"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button:hover{
+        /*Making the button lighter when the cursor is hovering over it*/
+        opacity: 0.8;
+    }
+    /*Making the error message red and centered*/
+    .error{
+        color: red;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #body{
+        /*Adding color to the background*/
+        background-color:#49ccf0;
+        /*Changing the look of the cursor by setting it to an image url*/
+        cursor:url(images/airplane.png), auto;
+    }
+    .airplane{
+        /*Setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: planemove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(564px, 10px);
+    }
+    .cloud1{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud1move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-150px, -10px);
+    }
+    .cloud2{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud2move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(0px, 100px);
+    }
+    .cloud3{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud3move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-340px, 210px);
+    }
+    .cloud4{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud4move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-650px, 350px);
+    }
+    .cloud5{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud5move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, 450px);
+    }
+    .cloud6{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud6move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, -60px);
+    }
+    .cloud7{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud7move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-250px, 50px);
+    }
+    .cloud8{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud8move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(1100px, 60px);
+    }
+    .cloud9{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud9move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(900px, -180px);
+    }
+    /*Easteregg of hovering over cloud9 and seeing through the cloud to a smiley face*/
+    .cloud9:hover{
+        opacity: 0.8;
+    }
+    .smiley{
+        display: none;
+        width:50px;
+        height:50px;
+        transform: translate(1100px,-750px)
+    }
+    .cloud10{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud10move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(625px, 270px);
+    }
+    .topstring{
+        /*setting height and width*/
+        height:150px;
+        width:150px;
+        /*Adding the top string to the banner by making a border of two sides and then rotating it 45degrees later in the animation*/
+        border-top:3px solid #D57A09;
+        border-left:3px solid #D57A09;
+        /*Calling the correct animation and attatching it to the top string*/
+        animation-name: topstringmove;
+        animation-duration: 2s;
+        /*Making the top string stays in the position that the animation moved it to*/
+        transform: translate(562px, -182px) rotate(45deg);
+    }
+    .lgn_snp{
+        /*Putting the login and signup buttons next to eachother*/
+        display:flex;
+        height:40px;
+    }
+    .login{
+        /*Centering text in the button*/
+        text-align: center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: #E21C3D;
+        color:beige;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 75px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    b{
+        /*Adding color to the Input box labels*/
+        color:#510205ab
+    }
+    .signup{
+        /*Centering text in the button*/
+        text-align:center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: white;
+        color:#510205ab;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-left: 65px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    .firstname{
+        /*Spacing the firstname section from the login/signup buttons*/
+        margin-top:5px;
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .lastname{
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .go{
+        /*Adding color and shape to the submit button*/
+        border: 3px solid #D57A09;
+        background-color: #ECA361;
+        color:beige;
+        border-radius:8px;
+        margin: 8px 0;
+    }
+    .submit{
+        /*Adding color and shape to the submit button*/
+        border: 3px solid #D57A09;
+        background-color: #ECA361;
+        color:beige;
+        border-radius:8px;
+        margin: 8px 0;
+        display: none;
+    }
+}
+@media (max-width:600px){
+    /*Creating an animation to gradually switch the cloud1 from below view -> assigned spot*/
+    @keyframes cloud1move{
+        from {transform: translate(-150px, -800px);}
+        to {transform: translate(-150px, -10px);}
+    }
+    /*Creating an animation to gradually switch the cloud2 from below view -> assigned spot*/
+    @keyframes cloud2move{
+        from {transform: translate(0px, -800px);}
+        to {transform: translate(0px, 100px);}
+    }
+    /*Creating an animation to gradually switch the cloud3 from below view -> assigned spot*/
+    @keyframes cloud3move{
+        from {transform: translate(-340px, -800px);}
+        to {transform: translate(-340px, 210px);}
+    }
+    /*Creating an animation to gradually switch the cloud4 from below view -> assigned spot*/
+    @keyframes cloud4move{
+        from {transform: translate(-650px, -800px);}
+        to {transform: translate(-650px, 350px);}
+    }
+    /*Creating an animation to gradually switch the cloud5 from below view -> assigned spot*/
+    @keyframes cloud5move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, 450px);}
+    }
+    /*Creating an animation to gradually switch the cloud6 from below view -> assigned spot*/
+    @keyframes cloud6move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, -60px);}
+    }
+    /*Creating an animation to gradually switch the cloud7 from below view -> assigned spot*/
+    @keyframes cloud7move{
+        from {transform: translate(-250px, -800px);}
+        to {transform: translate(-250px, 50px);}
+    }
+    /*Creating an animation to gradually switch the cloud8 from below view -> assigned spot*/
+    @keyframes cloud8move{
+        from {transform: translate(1100px, -800px);}
+        to {transform: translate(1100px, 60px);}
+    }
+    /*Creating an animation to gradually switch the cloud9 from below view -> assigned spot*/
+    @keyframes cloud9move{
+        from {transform: translate(900px, -800px);}
+        to {transform: translate(900px, -180px);}
+    }
+    /*Creating an animation to gradually switch the cloud10 from below view -> assigned spot*/
+    @keyframes cloud10move{
+        from {transform: translate(625px, -800px);}
+        to {transform: translate(625px, 270px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes planemove{
+        from {transform: translate(125px, 800px);}
+        to {transform: translate(125px, 25px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes topstringmove{
+        from {transform: translate(562px, 800px);}
+        to {transform: translate(562px, -182px) rotate(45deg);}
+    }
+    /*Creating an animation to gradually switch the login section from below view -> assigned spot*/
+    @keyframes containermove{
+        from {transform: translate(20px, 800px);}
+        to {transform: translate(20px, -302px);}
+    }
+    /*Class for the entire login/signup section to limit repeating code*/
+    .container{
+        /*Setting width of section*/
+        max-width: 400px;
+        /*Centering the section in the middle of the page*/
+        margin: 0 auto;
+        padding: 20px;
+        /*Adding color to the background, border, and inset shadow to decrease contrast from blue to white*/
+        background-color: #ffffff;
+        border:1.5px solid #D57A09;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 1em 1em #ebf7fe;
+        /*Setting the font for the entire section class*/
+        font-family: "Lucida Console", "Courier New", monospace;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: containermove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(20px, -302px);
+    }
+    /*Sizing the input boxes for username,password,and names and calling them by their type*/
+    input[type="text"],
+    input[type="password"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="name"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button:hover{
+        /*Making the button lighter when the cursor is hovering over it*/
+        opacity: 0.8;
+    }
+    /*Making the error message red and centered*/
+    .error{
+        color: red;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #body{
+        /*Adding color to the background*/
+        background-color:#49ccf0;
+        /*Changing the look of the cursor by setting it to an image url*/
+        cursor:url(images/airplane.png), auto;
+    }
+    .airplane{
+        /*Setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: planemove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(564px, 10px);
+    }
+    .cloud1{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud1move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-150px, -10px);
+    }
+    .cloud2{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud2move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(0px, 100px);
+    }
+    .cloud3{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud3move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-340px, 210px);
+    }
+    .cloud4{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud4move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-650px, 350px);
+    }
+    .cloud5{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud5move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, 450px);
+    }
+    .cloud6{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud6move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, -60px);
+    }
+    .cloud7{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud7move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-250px, 50px);
+    }
+    .cloud8{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud8move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(1100px, 60px);
+    }
+    .cloud9{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud9move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(900px, -180px);
+    }
+    /*Easteregg of hovering over cloud9 and seeing through the cloud to a smiley face*/
+    .cloud9:hover{
+        opacity: 0.8;
+    }
+    .smiley{
+        display: none;
+        width:50px;
+        height:50px;
+        transform: translate(1100px,-750px)
+    }
+    .cloud10{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud10move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(625px, 270px);
+    }
+    .topstring{
+        /*setting height and width*/
+        height:150px;
+        width:150px;
+        /*Adding the top string to the banner by making a border of two sides and then rotating it 45degrees later in the animation*/
+        border-top:3px solid #D57A09;
+        border-left:3px solid #D57A09;
+        /*Calling the correct animation and attatching it to the top string*/
+        animation-name: topstringmove;
+        animation-duration: 2s;
+        /*Making the top string stays in the position that the animation moved it to*/
+        transform: translate(562px, -182px) rotate(45deg);
+    }
+    .lgn_snp{
+        /*Putting the login and signup buttons next to eachother*/
+        display:flex;
+        height:40px;
+    }
+    .login{
+        /*Centering text in the button*/
+        text-align: center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: #E21C3D;
+        color:beige;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 75px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    b{
+        /*Adding color to the Input box labels*/
+        color:#510205ab
+    }
+    .signup{
+        /*Centering text in the button*/
+        text-align:center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: white;
+        color:#510205ab;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-left: 65px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    .firstname{
+        /*Spacing the firstname section from the login/signup buttons*/
+        margin-top:5px;
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .lastname{
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .submit{
+        /*Adding color and shape to the submit button*/
+        border: 3px solid #D57A09;
+        background-color: #ECA361;
+        color:beige;
+        border-radius:8px;
+        margin: 8px 0;
+    }
+}
+@media(min-width:600px)and(max-width:900px){
+    /*Creating an animation to gradually switch the cloud1 from below view -> assigned spot*/
+    @keyframes cloud1move{
+        from {transform: translate(-150px, -800px);}
+        to {transform: translate(-150px, -10px);}
+    }
+    /*Creating an animation to gradually switch the cloud2 from below view -> assigned spot*/
+    @keyframes cloud2move{
+        from {transform: translate(0px, -800px);}
+        to {transform: translate(0px, 100px);}
+    }
+    /*Creating an animation to gradually switch the cloud3 from below view -> assigned spot*/
+    @keyframes cloud3move{
+        from {transform: translate(-340px, -800px);}
+        to {transform: translate(-340px, 210px);}
+    }
+    /*Creating an animation to gradually switch the cloud4 from below view -> assigned spot*/
+    @keyframes cloud4move{
+        from {transform: translate(-650px, -800px);}
+        to {transform: translate(-650px, 350px);}
+    }
+    /*Creating an animation to gradually switch the cloud5 from below view -> assigned spot*/
+    @keyframes cloud5move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, 450px);}
+    }
+    /*Creating an animation to gradually switch the cloud6 from below view -> assigned spot*/
+    @keyframes cloud6move{
+        from {transform: translate(-500px, -800px);}
+        to {transform: translate(-500px, -60px);}
+    }
+    /*Creating an animation to gradually switch the cloud7 from below view -> assigned spot*/
+    @keyframes cloud7move{
+        from {transform: translate(-250px, -800px);}
+        to {transform: translate(-250px, 50px);}
+    }
+    /*Creating an animation to gradually switch the cloud8 from below view -> assigned spot*/
+    @keyframes cloud8move{
+        from {transform: translate(1100px, -800px);}
+        to {transform: translate(1100px, 60px);}
+    }
+    /*Creating an animation to gradually switch the cloud9 from below view -> assigned spot*/
+    @keyframes cloud9move{
+        from {transform: translate(900px, -800px);}
+        to {transform: translate(900px, -180px);}
+    }
+    /*Creating an animation to gradually switch the cloud10 from below view -> assigned spot*/
+    @keyframes cloud10move{
+        from {transform: translate(625px, -800px);}
+        to {transform: translate(625px, 270px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes planemove{
+        from {transform: translate(250px, 800px);}
+        to {transform: translate(250px, 25px);}
+    }
+    /*Creating an animation to gradually switch the plane from below view -> assigned spot*/
+    @keyframes topstringmove{
+        from {transform: translate(562px, 800px);}
+        to {transform: translate(562px, -182px) rotate(45deg);}
+    }
+    /*Creating an animation to gradually switch the login section from below view -> assigned spot*/
+    @keyframes containermove{
+        from {transform: translate(20px, 800px);}
+        to {transform: translate(20px, -302px);}
+    }
+    /*Class for the entire login/signup section to limit repeating code*/
+    .container{
+        /*Setting width of section*/
+        max-width: 400px;
+        /*Centering the section in the middle of the page*/
+        margin: 0 auto;
+        padding: 20px;
+        /*Adding color to the background, border, and inset shadow to decrease contrast from blue to white*/
+        background-color: #ffffff;
+        border:1.5px solid #D57A09;
+        border-radius: 5px;
+        box-shadow: inset 1px 1px 1em 1em #ebf7fe;
+        /*Setting the font for the entire section class*/
+        font-family: "Lucida Console", "Courier New", monospace;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: containermove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(20px, -302px);
+    }
+    /*Sizing the input boxes for username,password,and names and calling them by their type*/
+    input[type="text"],
+    input[type="password"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input[type="name"]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: none;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    button:hover{
+        /*Making the button lighter when the cursor is hovering over it*/
+        opacity: 0.8;
+    }
+    /*Making the error message red and centered*/
+    .error{
+        color: red;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #body{
+        /*Adding color to the background*/
+        background-color:#49ccf0;
+        /*Changing the look of the cursor by setting it to an image url*/
+        cursor:url(images/airplane.png), auto;
+    }
+    .airplane{
+        /*Setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to the plane*/
+        animation-name: planemove;
+        animation-duration: 2s;
+        /*Making the plane stay in the place that the animation moved it to*/
+        transform: translate(564px, 10px);
+    }
+    .cloud1{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud1move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-150px, -10px);
+    }
+    .cloud2{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud2move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(0px, 100px);
+    }
+    .cloud3{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud3move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-340px, 210px);
+    }
+    .cloud4{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud4move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-650px, 350px);
+    }
+    .cloud5{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud5move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, 450px);
+    }
+    .cloud6{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud6move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-500px, -60px);
+    }
+    .cloud7{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud7move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(-250px, 50px);
+    }
+    .cloud8{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud8move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(1100px, 60px);
+    }
+    .cloud9{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud9move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(900px, -180px);
+    }
+    /*Easteregg of hovering over cloud9 and seeing through the cloud to a smiley face*/
+    .cloud9:hover{
+        opacity: 0.8;
+    }
+    .smiley{
+        display: none;
+        width:50px;
+        height:50px;
+        transform: translate(1100px,-750px)
+    }
+    .cloud10{
+        /*setting width*/
+        width:150px;
+        /*Calling the correct animation and attatching it to cloud*/
+        animation-name: cloud10move;
+        animation-duration: 2s;
+        /*Making the cloud stay in the place that the animation moved it to*/
+        transform: translate(625px, 270px);
+    }
+    .topstring{
+        /*setting height and width*/
+        height:150px;
+        width:150px;
+        /*Adding the top string to the banner by making a border of two sides and then rotating it 45degrees later in the animation*/
+        border-top:3px solid #D57A09;
+        border-left:3px solid #D57A09;
+        /*Calling the correct animation and attatching it to the top string*/
+        animation-name: topstringmove;
+        animation-duration: 2s;
+        /*Making the top string stays in the position that the animation moved it to*/
+        transform: translate(562px, -182px) rotate(45deg);
+    }
+    .lgn_snp{
+        /*Putting the login and signup buttons next to eachother*/
+        display:flex;
+        height:40px;
+    }
+    .login{
+        /*Centering text in the button*/
+        text-align: center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: #E21C3D;
+        color:beige;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-left: 75px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    b{
+        /*Adding color to the Input box labels*/
+        color:#510205ab
+    }
+    .signup{
+        /*Centering text in the button*/
+        text-align:center;
+        /*Adding text color and a border that will fill half of the lgn_snp section by utilizing padding*/
+        border: 3px solid #C7050D;
+        background-color: white;
+        color:#510205ab;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-left: 65px;
+        padding-right:75px;
+        /*Setting the font*/
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    .firstname{
+        /*Spacing the firstname section from the login/signup buttons*/
+        margin-top:5px;
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .lastname{
+        /*Making the firstname label and box disappear in the beginning*/
+        display:none;
+    }
+    .submit{
+        /*Adding color and shape to the submit button*/
+        border: 3px solid #D57A09;
+        background-color: #ECA361;
+        color:beige;
+        border-radius:8px;
+        margin: 8px 0;
+    }
+}
