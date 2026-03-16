@@ -12,10 +12,14 @@ signupBtn.addEventListener('click', () => {
     submitBtn.style.display = 'block';
     goBtn.style.display = 'none';
     
-    signupBtn.style.backgroundColor = '#E21C3D';
-    signupBtn.style.color = 'beige';
-    loginBtn.style.backgroundColor = 'white';
-    loginBtn.style.color = '#510205ab';
+    signupBtn.style.backgroundColor = '#D57A09';
+    signupBtn.style.color = '#ffffff';
+    signupBtn.style.border = 'none';
+    
+    loginBtn.style.backgroundColor = '#f4f4f4';
+    loginBtn.style.color = '#2d2d2d';
+    loginBtn.style.border = '1px solid #ddd';
+    
     errorDiv.textContent = '';
 });
 
@@ -25,22 +29,29 @@ loginBtn.addEventListener('click', () => {
     submitBtn.style.display = 'none';
     goBtn.style.display = 'block';
     
-    loginBtn.style.backgroundColor = '#E21C3D';
-    loginBtn.style.color = 'beige';
-    signupBtn.style.backgroundColor = 'white';
-    signupBtn.style.color = '#510205ab';
+    loginBtn.style.backgroundColor = '#D57A09';
+    loginBtn.style.color = '#ffffff';
+    loginBtn.style.border = 'none';
+    
+    signupBtn.style.backgroundColor = '#f4f4f4';
+    signupBtn.style.color = '#2d2d2d';
+    signupBtn.style.border = '1px solid #ddd';
+    
     errorDiv.textContent = '';
 });
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw3y8R8sfkfQ-QqfG3FHIuFcjOlSqcZVZkachvleC6AX6RJbM6Tg4gSezGi4RasBbDk/exec';
+
+const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
 const form = document.getElementById('submit-to-google-sheets');
+
 form.addEventListener('submit', e => {
     e.preventDefault();
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      alert("Success! Data saved to Google Sheets.");
-      form.reset();
-    })
-    .catch(error => {
-      document.getElementById('error').textContent = "Error: " + error.message;
-    });
+        .then(response => {
+            alert("Success!");
+            form.reset();
+        })
+        .catch(error => {
+            errorDiv.textContent = "Error: " + error.message;
+        });
 });
