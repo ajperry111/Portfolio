@@ -13,7 +13,7 @@ header {
     background-color: #ffffff;
     width: 100%;
     padding: 15px 0;
-    border-bottom: 3px solid #D57A09;
+    border-bottom: 3px solid #171616;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@ header {
     max-width: 450px;
     padding: 30px;
     background-color: #ffffff;
-    border: 2px solid #D57A09;
+    border: 2px solid #171616;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
