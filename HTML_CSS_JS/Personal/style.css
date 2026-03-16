@@ -9,10 +9,11 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
 header {
     background-color: #ffffff;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
     border-bottom: 3px solid #171616;
     position: fixed;
     top: 0;
@@ -20,36 +21,37 @@ header {
     z-index: 1000;
     text-align: center;
 }
+
+.topstring {
+    margin: 0;
+    color: #510205ab;
+    font-size: 36px;
+    font-weight: bold;
+}
+
 .container {
-    margin-top: 120px;
+    margin-top: 160px;
     width: 90%;
-    max-width: 450px;
-    padding: 30px;
+    max-width: 600px;
+    padding: 50px;
     background-color: #ffffff;
     border: 2px solid #171616;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
-.topstring {
-    margin: 0;
-    color: #510205ab;
-    font-size: 24px;
-}
-footer {
-    margin: 20px 0;
-    text-align: center;
-}
 .lgn_snp {
     display: flex;
     justify-content: stretch;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .login, .signup {
     flex: 1;
-    padding: 12px;
+    padding: 18px;
+    font-size: 18px;
     border: 2px solid #C7050D;
     cursor: pointer;
     font-family: inherit;
@@ -74,31 +76,39 @@ footer {
 
 label {
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
     color: #510205ab;
+    font-size: 18px;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="name"] {
     width: 100%;
-    padding: 12px;
-    margin-top: 5px;
+    padding: 15px;
+    margin-top: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .go, .submit {
     width: 100%;
-    padding: 12px;
-    margin-top: 20px;
+    padding: 18px;
+    margin-top: 30px;
     border: 3px solid #D57A09;
     background-color: #ECA361;
     color: beige;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 20px;
     cursor: pointer;
+}
+
+footer {
+    margin: 20px 0;
+    text-align: center;
 }
 
 .firstname, .lastname, .submit {
@@ -107,19 +117,24 @@ input[type="name"] {
 
 .error {
     color: red;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 @media (max-width: 600px) {
     .container {
-        padding: 15px;
+        padding: 25px;
         width: 95%;
+        margin-top: 140px;
     }
     
+    .topstring {
+        font-size: 28px;
+    }
+
     .login, .signup {
-        padding: 10px;
-        font-size: 14px;
+        padding: 12px;
+        font-size: 16px;
     }
 }
