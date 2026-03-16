@@ -4,59 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Account Portal</title>
+    <title>Account Access</title>
 </head>
-<body>
-    <div id="wrapper">
-        
+<body id="body">
+    <div class="container">
         <header>
-            <h1 class="topstring">Account Services</h1>
+            <h1 class="topstring">JavaJam Account</h1>
         </header>
 
-        <main>
-            <div class="container">
-                <div class="lgn_snp">
-                    <button class="login">Login</button>
-                    <button class="signup">Sign-up</button>
-                </div>
+        <div class="lgn_snp">
+            <button class="login">Login</button>
+            <button class="signup">Sign-up</button>
+        </div>
 
-                <form id="submit-to-google-sheets">
-                    <div class="form-group">
-                        <label for="firstname"><b>First Name</b></label>
-                        <input name="firstname" type="text" placeholder="Enter Firstname" id="firstname">
-                    </div>
+        <form id="submit-to-google-sheets">
+            <label class="firstname"><b>Firstname</b>
+                <input name="firstname" type="text" placeholder="Enter Firstname" id="firstname">
+            </label>
 
-                    <div class="form-group">
-                        <label for="lastname"><b>Last Name</b></label>
-                        <input name="lastname" type="text" placeholder="Enter Lastname" id="lastname">
-                    </div>
+            <label class="lastname"><b>Lastname</b>
+                <input name="lastname" type="text" placeholder="Enter Lastname" id="lastname">
+            </label>
 
-                    <div class="error" id="error"></div>
+            <div class="error" id="error"></div>
 
-                    <div class="form-group">
-                        <label for="username"><b>Username</b></label>
-                        <input name="username" type="text" placeholder="Enter Username" id="username" required>
-                    </div>
+            <label class="username"><b>Username</b>
+                <input name="username" type="text" placeholder="Enter Username" id="username" required>
+            </label>
 
-                    <div class="form-group">
-                        <label for="password"><b>Password</b></label>
-                        <input name="password" type="password" placeholder="Enter Password" id="password" required>
-                    </div>
+            <label class="password"><b>Password</b>
+                <input name="password" type="password" placeholder="Enter Password" id="password" required>
+            </label>
 
-                    <div class="actions">
-                        <button type="submit" class="submit">Create Account</button>
-                        <button type="submit" class="go">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </main>
-
-        <footer>
-            <p>Copyright &copy; 2026 Account Portal</p>
-        </footer>
+            <button type="submit" class="submit">Create Account</button>
+            <button type="submit" class="go">Submit</button>
+        </form>
     </div>
 
     <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+        function init() {
+            gapi.client.init({
+                apiKey: 'AIzaSyBJ0gb7T52mGBXN50AOg1nZoWcogfCmXwY',
+                discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+            }).then(() => {
+                fetchDataFromGoogleSheets();
+            }).catch((error) => {
+                console.error('Error initializing Google Sheets API:', error);
+            });
+        }
+
+        function fetchDataFromGoogleSheets() {
+            gapi.client.sheets.spreadsheets.values.get({
+                spreadsheetId: '1UtuNwcnkC_513gyL_HVp3vzXOKynS3HMzXUC4hPKTw8',
+                range: 'Login!A1:B5'
+            }).then((response) => {
+                const values = response.result.values;
+                const data = values.map((row) => ({
+                    col1: row[0],
+                    col2: row[1]
+                }));
+                console.log(data);
+            }).catch((error) => {
+                console.error('Error retrieving data from Google Sheets:', error);
+            });
+        }
+
+        gapi.load('client', init);
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
