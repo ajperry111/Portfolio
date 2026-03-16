@@ -31,9 +31,16 @@ loginBtn.addEventListener('click', () => {
     signupBtn.style.color = '#510205ab';
     errorDiv.textContent = '';
 });
-
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw3y8R8sfkfQ-QqfG3FHIuFcjOlSqcZVZkachvleC6AX6RJbM6Tg4gSezGi4RasBbDk/exec';
 const form = document.getElementById('submit-to-google-sheets');
 form.addEventListener('submit', e => {
     e.preventDefault();
-    console.log("Form submitted. Integrating with Google Sheets logic...");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      alert("Success! Data saved to Google Sheets.");
+      form.reset();
+    })
+    .catch(error => {
+      document.getElementById('error').textContent = "Error: " + error.message;
+    });
 });
