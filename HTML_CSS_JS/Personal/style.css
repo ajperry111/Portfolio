@@ -4,30 +4,43 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 3px solid #D57A09;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
 .container {
+    margin-top: 120px;
     width: 90%;
     max-width: 450px;
-    margin: 20px auto;
     padding: 30px;
     background-color: #ffffff;
     border: 2px solid #D57A09;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .topstring {
-    text-align: center;
+    margin: 0;
     color: #510205ab;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #D57A09;
-    padding-bottom: 10px;
+    font-size: 24px;
 }
-
+footer {
+    margin: 20px 0;
+    text-align: center;
+}
 .lgn_snp {
     display: flex;
     justify-content: stretch;
