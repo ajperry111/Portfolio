@@ -8,7 +8,7 @@ const errorDiv = document.getElementById('error');
 const form = document.getElementById('submit-to-google-sheets');
 
 let isSignUpMode = false;
-const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw3y8R8sfkfQ-QqfG3FHIuFcjOlSqcZVZkachvleC6AX6RJbM6Tg4gSezGi4RasBbDk/exec';
 
 signupBtn.addEventListener('click', () => {
     isSignUpMode = true;
